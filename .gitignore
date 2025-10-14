@@ -1,0 +1,43 @@
+/build/
+
+
+# Ignore build directory
+/build/
+
+# Ignore compiled object files and binaries
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Ignore temporary files
+*~
+*.swp
+*.tmp
+
+# Ignore cache
+.cache/
+
+# Ignore direnv environment
+.direnv/
+.envrc
+
+# Ignore log files
+*.log
+
+# Ignore compile_commands.json if generated
+compile_commands.json
+
+# Ignore Nix build artifacts
+result/
+
+# Ignore VS Code and other editor folders
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
