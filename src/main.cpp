@@ -3,7 +3,6 @@
 #include "SDL2/SDL.h"
 #include "SDL_rect.h"
 #include "SDL_render.h"
-#include "SDL_surface.h"
 #include "SDL_video.h"
 #include <cmath>
 #include <cstddef>
@@ -93,13 +92,13 @@ int main() {
 
   uint8_t *pixels = new uint8_t[windowWidth * windowHeight * 4];
 
-  const int GRID_SIZE = 400;
+  const int GRID_SIZE = 1600;
 
   for (int x = 0; x < windowWidth; x++) {
     for (int y = 0; y < windowHeight; y++) {
       int index = (y * windowWidth + x) * 4;
 
-      float val = 0.0f;
+      float val = 0;
 
       float freq = 1;
       float amp = 1;
